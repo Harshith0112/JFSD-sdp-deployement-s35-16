@@ -48,7 +48,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 			.antMatchers("/teacher/**").hasRole("TEACHER")
 			.and()
 			.formLogin()
-				.loginPage("/showLoginPage") // custom login page is generated in LoginController
+				.loginPage("/") // custom login page is generated in LoginController
 				.loginProcessingUrl("/authenticateTheUser") // authenticateTheUser is automatically done by spring boot
 				.successHandler(customAuthenticationSuccessHandler) // after login, user is redirected to home page depending on the role.
 				.permitAll()
