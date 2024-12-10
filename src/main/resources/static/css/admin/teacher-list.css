@@ -1,5 +1,19 @@
 /* teacher-list.css */
+body {
+  background-image: url("http://codingstella.com/wp-content/uploads/2024/01/download-6-scaled.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgb(12, 220, 243);
+  height: 100vh; /* Set fixed height */
+  overflow: hidden; /* Remove scrollbar */
+  margin: 0;
+}
 
+html {
+  height: 100%;
+}
 /* General Styles */
 h3 {
     font-size: 24px;
