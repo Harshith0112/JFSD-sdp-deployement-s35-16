@@ -34,7 +34,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		
 		auth.inMemoryAuthentication()  // admin password username
 			.withUser("admin")
-			.password("{noop}1") // Use {noop} to indicate no password encoding
+			.password("{noop}admin") // Use {noop} to indicate no password encoding
 			.roles("ADMIN");
 		
 	}
